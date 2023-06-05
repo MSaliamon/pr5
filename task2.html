@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pr5</title>
+    <style>
+      input {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script language="JavaScript" type="text/javascript">
+      function ShowVysliv(autor_number) {
+        var vysliv;
+        switch (autor_number) {
+          case 1:
+            vysliv = "Народна пісня-духовне обличчя нації.";
+            break;
+          case 2:
+            vysliv =
+              "Українська пісня — це бездонна душа українського народу, це його слава.";
+            break;
+          case 3:
+            vysliv =
+              "Я єсть народ, якого Правди сила ніким звойована ще не була.";
+            break;
+          case 4:
+            vysliv = "Немає магії сильнішої, ніж магія слів.";
+            break;
+          case 5:
+            vysliv = "Споконвіку було Слово.";
+            break;
+        }
+
+        alert(vysliv);
+      }
+      document.write(
+        "<h1>Про батьківщину та патріотизм. Про рідну мову, українську пісню.</h1>" +
+          '<input type="button" onclick="ShowVysliv(1);" value="А. Міцкевич">' +
+          '<input type="button" onclick="ShowVysliv(2);" value="О. Довженко">' +
+          '<input type="button" onclick="ShowVysliv(3);" value="П. Тичина">' +
+          '<input type="button" onclick="ShowVysliv(4);" value="А. Франс">' +
+          '<input type="button" onclick="ShowVysliv(5);" value="Старий Заповіт">'
+      );
+    </script>
+  </body>
+</html>
